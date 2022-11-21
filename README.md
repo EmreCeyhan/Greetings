@@ -42,7 +42,7 @@ Greetings and Film classifications code using JUnit Jupiter testing
 
         }        
 ```
-JUnit testing 
+### JUnit testing 
 ```java
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -51,7 +51,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 ```
-@Test
+### @Test
 ```java
  @Test
     @DisplayName("Given a time of 21, greeting returns good evening")
@@ -69,7 +69,7 @@ import static org.junit.jupiter.api.Assertions.*;
     }
 
 ```
-@ParameterizedTes
+### @ParameterizedTes
 ```java
     @ParameterizedTest
     @ValueSource(ints = {-5, 27, 40})
