@@ -1,7 +1,7 @@
 # Greetings and Film Classifications 
 Greetings and Film classifications code using JUnit Jupiter testing
 ## Made use of
-### Menu's
+### Menus
 ```java
         while (menu == false) {
             System.out.println("Select 1 for greeting and 2 for film classification");
