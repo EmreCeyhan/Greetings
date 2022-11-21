@@ -42,8 +42,42 @@ Greetings and Film classifications code using JUnit Jupiter testing
 
         }        
 ```
-
-
 JUnit testing 
+```java
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static org.junit.jupiter.api.Assertions.*;
+```
 @Test
+```java
+ @Test
+    @DisplayName("Given a time of 21, greeting returns good evening")
+    public void givenATime21_Greeting_ReturnsGoodEvening()
+    {
+        //arrange
+        int time = 21;
+        String expectedGreeting = "good evening";
+        // Act
+        String result = Main.greeting(time);
+        //Assert
+        assertEquals(expectedGreeting, result);
+
+        //assertEquals("good evening", Main.greeting(21));
+    }
+
+```
 @ParameterizedTes
+```java
+    @ParameterizedTest
+    @ValueSource(ints = {-5, 27, 40})
+    @DisplayName("Given a time out of boundaries")
+    public void GivenATimeOutOfBounds(int time)
+    {
+        String expectedGreeting = "not a valid timeframe";
+        String result = Main.greeting(time);
+        assertEquals(expectedGreeting, result);
+    }
+```
