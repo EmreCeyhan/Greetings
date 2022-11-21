@@ -3,7 +3,7 @@ Greetings and Film classifications code using JUnit Jupiter testing
 ## Made use of
 Menu's
 
-'''java
+```java
 
         while (menu == false) {
             System.out.println("Select 1 for greeting and 2 for film classification");
@@ -44,7 +44,7 @@ Menu's
 
         }
         
-'''
+```
 
 
 JUnit testing 
